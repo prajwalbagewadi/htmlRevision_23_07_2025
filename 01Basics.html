@@ -1,0 +1,71 @@
+<!--
+press shift+! and tab: to get the Emmet template
+
+  html documentation:
+    https://developer.mozilla.org/en-US/docs/Web/HTML
+    https://www.w3schools.com/html/
+    https://docs.emmet.io
+
+  emmet best works with vscode best tool for webdev. 
+-->
+
+<!--template-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--contents: meta data-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>htmlDocument</title>
+  </head>
+  <body>
+    <!--contents: main contents of the web page-->
+    <!--
+    element
+    <starttag attributes="values">content</endtag>
+    attributes>properties of tag
+    -->
+    <!--
+    faster way to generate Emmet and learn:
+        https://emmet.io
+        syntax > abbrevations 
+    -->
+    <!--write tag name + tab: to generate the paired tags-->
+    <!--attribute title="val"-->
+    <p title="nested">
+      <!--lorem10 + tab: to generate 10 words of lorem text-->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae.
+    </p>
+    <!--p>lorem3>p>lorem2>p>lorem1: to generate nested tags-->
+    <p>
+        Lorem, ipsum dolor.
+        <p>
+            Lorem, ipsum.
+            <p>Lorem.</p>
+        </p>
+    </p>
+    <!--p*3: to generate three p tags-->
+    <p></p>
+    <p></p>
+    <p></p>
+    <!--paired tag: has opening and closing tags and wraps around content-->
+    <p></p>
+    <!--singular tag:No content, stands alone-->
+    <!--
+    Tag	        Purpose
+    <br>	    Line break
+    <hr>	    Horizontal line
+    <img>	    Image
+    <input>	    Input field
+    <meta>	    Metadata info
+    <link>	    Link to CSS or favicon
+    <source>	Media source (audio/video)
+    <area>	    Map area
+    <col>	    Table column spec
+    -->
+    <!--
+    block element goes from left to right takes the entire element(entire line)
+    inline elements goes within the line(does not consume the entire block)
+    -->
+  </body>
+</html>
