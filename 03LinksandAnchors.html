@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links and Anchors</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .syntax {
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        color: #ffffff;
+      }
+      a.custom-link {
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+      }
+      a.custom-link:hover {
+        color: rgb(0, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔗Links and Anchors.</h1>
+    <h3>1. Basic Link Syntax</h3>
+    <pre class="syntax">
+        &lt;a href="https://www.google.com"&gt;click for google&lt;/a&gt;
+    </pre>
+    <a href="https://www.google.com">click for google</a>
+    <h3>2. Target Attribute</h3>
+    <pre class="syntax">
+        &lt;a href="https://www.google.com" target="_blank"&gt;click for google&lt;/a&gt;
+        
+        //1.target="_blank": Opens the link in a new tab/window.
+        //2.target="_self": Opens in the same tab (default).
+        //3.target="_parent" / _top: Used in frames.
+    </pre>
+    <a href="https://www.google.com" target="_blank">click for google</a>
+    <h3>3. Types of Links</h3>
+    <pre class="syntax">
+        Type	Example
+        Absolute Link	&lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+        Relative Link	&lt;a href="/about.html"&gt;About Page&lt;/a&gt;
+        Email Link      &lt;a href="mailto:name@example.com"&gt;Email Us&lt;/a&gt;
+        Phone Link	&lt;a href="tel:+911234567890"&gt;Call Us&lt;/a&gt;
+        Download Link	&lt;a href="file.pdf" download&gt;Download PDF&lt;/a&gt;
+    </pre>
+    <h3>4. Anchor Links (Jump Links)</h3>
+    <p>Used to jump to a section on the same page.</p>
+    <pre class="syntax">
+        <h4>Step 1: Add an id to the target section</h4>
+        &lt;h2 id="contact"&gt;Contact Us:+tel number&lt;/h2&gt;
+        <h4>Step 2: Create a link to it</h4>
+        &lt;a href="#contact"&gt;Go to Contact Section&lt;/a&gt;
+        <h4>✅ Note: This works within the same page, or across pages like:</h4>
+        &lt;a href="about.html#team"&gt;Go to Team Section in About Page&lt;/a&gt;
+    </pre>
+    <h3>5. Styling Links (Basic CSS)</h3>
+    <pre class="syntax">
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+        }
+    </pre>
+    <a
+      href="https://164model.com/blogs/news/wheels-swap-guide-for-1-64-diecast-cars?srsltid=AfmBOooDaaeYDZokrGf1oyOw9jigpFCBioCnjbVYnsvySsvc1bpmxLhZ"
+      target="_blank"
+      class="custom-link"
+      >1:64 models</a
+    >
+    <h3>6. Link with Images or Other Content</h3>
+    <pre class="syntax">
+      &lt;a href="https://example.com"&gt;
+        &lt;img src="logo.png" alt="Go to Example"&gt;
+      &lt;/a&gt;
+    </pre>
+    <a
+      href="https://minigt.tsm-models.com/index.php?action=product-detail&id=1863#d8039"
+      target="_self"
+    >
+      <img src="./images/lwlambo.jpeg" alt="lambo" />
+    </a>
+  </body>
+</html>
